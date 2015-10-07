@@ -14,7 +14,6 @@
 		49422FF61AAD05CC002EDF82 /* PresentationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49422FF31AAD05CC002EDF82 /* PresentationModal.swift */; };
 		49422FF71AAD05CC002EDF82 /* PresentationPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49422FF41AAD05CC002EDF82 /* PresentationPush.swift */; };
 		49422FF81AAD05CC002EDF82 /* PresentationSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49422FF51AAD05CC002EDF82 /* PresentationSegue.swift */; };
-		495A8A5A1A5069B200509C1B /* RouteUrlMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A8A581A5069B200509C1B /* RouteUrlMatcher.swift */; };
 		4992F6231AB6154E00E53BE5 /* UIViewController+Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4992F6221AB6154E00E53BE5 /* UIViewController+Segue.swift */; };
 		49A961471BC5C260005BA0BE /* URLContextHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A961461BC5C260005BA0BE /* URLContextHandler.swift */; settings = {ASSET_TAGS = (); }; };
 		49A961491BC5C2EE005BA0BE /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A961481BC5C2EE005BA0BE /* Resolver.swift */; settings = {ASSET_TAGS = (); }; };
@@ -37,7 +36,6 @@
 		49422FF31AAD05CC002EDF82 /* PresentationModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationModal.swift; sourceTree = "<group>"; };
 		49422FF41AAD05CC002EDF82 /* PresentationPush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationPush.swift; sourceTree = "<group>"; };
 		49422FF51AAD05CC002EDF82 /* PresentationSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationSegue.swift; sourceTree = "<group>"; };
-		495A8A581A5069B200509C1B /* RouteUrlMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteUrlMatcher.swift; sourceTree = "<group>"; };
 		4992F6221AB6154E00E53BE5 /* UIViewController+Segue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Segue.swift"; sourceTree = "<group>"; };
 		49A961461BC5C260005BA0BE /* URLContextHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLContextHandler.swift; sourceTree = "<group>"; };
 		49A961481BC5C2EE005BA0BE /* Resolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
@@ -75,14 +73,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		495A8A561A5069B200509C1B /* Matcher */ = {
-			isa = PBXGroup;
-			children = (
-				495A8A581A5069B200509C1B /* RouteUrlMatcher.swift */,
-			);
-			path = Matcher;
-			sourceTree = "<group>";
-		};
 		49A961451BC5C236005BA0BE /* URL */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +106,6 @@
 		49E5EA841A0BC38400169136 /* Route */ = {
 			isa = PBXGroup;
 			children = (
-				495A8A561A5069B200509C1B /* Matcher */,
 				490C38461A48564900EC432E /* Routable.swift */,
 				49E5EA861A0BC3A400169136 /* Route.swift */,
 				490C38421A4855CC00EC432E /* RouteCollection.swift */,
@@ -372,7 +361,6 @@
 				490C38431A4855CC00EC432E /* RouteCollection.swift in Sources */,
 				490C38391A48219E00EC432E /* NavigationContext.swift in Sources */,
 				490C38491A48565000EC432E /* Navigator.swift in Sources */,
-				495A8A5A1A5069B200509C1B /* RouteUrlMatcher.swift in Sources */,
 				49422FF81AAD05CC002EDF82 /* PresentationSegue.swift in Sources */,
 				49A9614B1BC5C4CA005BA0BE /* URLRequest.swift in Sources */,
 				49422FF71AAD05CC002EDF82 /* PresentationPush.swift in Sources */,
