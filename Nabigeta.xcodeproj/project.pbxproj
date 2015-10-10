@@ -22,6 +22,8 @@
 		49B035FA1AACFE9900CB95DD /* PresentationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B035F91AACFE9900CB95DD /* PresentationStrategy.swift */; };
 		49DE53791A6EBDCF005A67AE /* UIViewController+Nabigeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DE53781A6EBDCF005A67AE /* UIViewController+Nabigeta.swift */; };
 		49E5EA871A0BC3A400169136 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E5EA861A0BC3A400169136 /* Route.swift */; };
+		49EFF3991BC95E6D00EB0A84 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFF3981BC95E6D00EB0A84 /* Request.swift */; settings = {ASSET_TAGS = (); }; };
+		49EFF39B1BC95F7B00EB0A84 /* RouteURLRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EFF39A1BC95F7B00EB0A84 /* RouteURLRouter.swift */; settings = {ASSET_TAGS = (); }; };
 		49FAA6801A0941DE00AF3D5C /* Nabigeta.h in Headers */ = {isa = PBXBuildFile; fileRef = 49FAA67F1A0941DE00AF3D5C /* Nabigeta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		49FAA68A1A0941DE00AF3D5C /* NabigetaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FAA6891A0941DE00AF3D5C /* NabigetaTests.swift */; };
 		5FD70990BC9FFCA4FC483D6B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C61568D1F5A3F8D65E5340EF /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -44,6 +46,8 @@
 		49B035F91AACFE9900CB95DD /* PresentationStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationStrategy.swift; sourceTree = "<group>"; };
 		49DE53781A6EBDCF005A67AE /* UIViewController+Nabigeta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Nabigeta.swift"; sourceTree = "<group>"; };
 		49E5EA861A0BC3A400169136 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		49EFF3981BC95E6D00EB0A84 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		49EFF39A1BC95F7B00EB0A84 /* RouteURLRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteURLRouter.swift; sourceTree = "<group>"; };
 		49FAA67A1A0941DE00AF3D5C /* Nabigeta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nabigeta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FAA67E1A0941DE00AF3D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FAA67F1A0941DE00AF3D5C /* Nabigeta.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nabigeta.h; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				490C38461A48564900EC432E /* Routable.swift */,
 				49E5EA861A0BC3A400169136 /* Route.swift */,
 				490C38421A4855CC00EC432E /* RouteCollection.swift */,
+				49EFF39A1BC95F7B00EB0A84 /* RouteURLRouter.swift */,
 			);
 			path = Route;
 			sourceTree = "<group>";
@@ -120,6 +125,22 @@
 				490C38481A48565000EC432E /* Navigator.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		49EFF3941BC95DF800EB0A84 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				49EFF3971BC95E6300EB0A84 /* Router */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		49EFF3971BC95E6300EB0A84 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				49EFF3981BC95E6D00EB0A84 /* Request.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		49FAA6701A0941DE00AF3D5C = {
@@ -153,6 +174,7 @@
 				49FAA67D1A0941DE00AF3D5C /* Supporting Files */,
 				49DE53721A6EBDB6005A67AE /* UIKit */,
 				49A961451BC5C236005BA0BE /* URL */,
+				49EFF3941BC95DF800EB0A84 /* Vendor */,
 			);
 			path = Nabigeta;
 			sourceTree = "<group>";
@@ -257,6 +279,7 @@
 		49FAA6711A0941DE00AF3D5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = fr.milkshake;
 				TargetAttributes = {
@@ -362,6 +385,8 @@
 				490C38391A48219E00EC432E /* NavigationContext.swift in Sources */,
 				490C38491A48565000EC432E /* Navigator.swift in Sources */,
 				49422FF81AAD05CC002EDF82 /* PresentationSegue.swift in Sources */,
+				49EFF3991BC95E6D00EB0A84 /* Request.swift in Sources */,
+				49EFF39B1BC95F7B00EB0A84 /* RouteURLRouter.swift in Sources */,
 				49A9614B1BC5C4CA005BA0BE /* URLRequest.swift in Sources */,
 				49422FF71AAD05CC002EDF82 /* PresentationPush.swift in Sources */,
 				49422FF61AAD05CC002EDF82 /* PresentationModal.swift in Sources */,

@@ -38,6 +38,11 @@ public class Navigator : NSObject {
 
     @objc(navigateURL:sender:)
     public func navigate(url: NSURL, sender: UIViewController) {
+        for collection in self.routesCollection {
+            if let matching = collection[url] {
+                self.navigate(matching.route, context: nil, sender: sender)
+            }
+        }
     }
 
     private func navigate(route: Routable, context: AnyObject?, sender: UIViewController) {
